@@ -5,9 +5,13 @@
     
 }
 
+nav {
+    position: fixed;
+}
+
 .nav-wrapper {
     background-color: #ec407a;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .container {
