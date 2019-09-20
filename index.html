@@ -43,19 +43,68 @@
     </nav>
     <div class="container">
         <div class="content">
-            <!-- CHATBOX -->
-            <div class="chatBox pink lighten-3">
+            <!-- CHATBOX INTRO-->
+            <div class="chatBox pink lighten-3 center-align floating">
                 <p class="chatBoxOne">
                     Hello, I'm PosiBot. I'm a positivity chatbot to help you when you're feeling down.
                 </p>
             </div>
-            <!-- <p id="p">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum vitae porro in ut ipsam rem, ea doloribus amet, vel dicta quis minus unde eum atque totam? Atque voluptate repudiandae similique.
-            </p> -->
+            <!-- BUTTON TO CLICK TO NEXT BOX -->
+            <div class="emoBtns center-align ">
+                <a id=happy class="waves-effect waves-light btn-large pink lighten-3">Hi PosiBot</a>
+            </div>
+
+            <!-- NEXT CHATBOX -->
+            <div class="chatBox pink lighten-3 center-align floating">
+                <p class="chatBoxOne">
+                    What is your name?
+                </p>
+            </div>
+            <!-- INPUT FOR USER NAME -->
+            <div class="row">
+                <div class="input-field col s3 offset-s4">
+                    <input value="Name" id="first_name2" type="text" class="validate">
+                    <label class="active" for="first_name2">First Name</label>
+                </div>
+            </div>
+            <!-- FEELING CHATBOX -->
+            <div class="chatBox pink lighten-3 center-align floating">
+                <p class="chatBoxOne">
+                    Hi <span id="first_name2"></span>, it's so nice to meet you. How are you feeling today?
+                </p>
+            </div>
+            <!-- USER RESPONSE FEELINGS -->
             <div class="emoBtns center-align ">
                 <a id=happy class="waves-effect waves-light btn-large pink lighten-3">Happy</a>
                 <a id=sad class="waves-effect waves-light btn-large pink lighten-3">Sad</a>
                 <a id=bored class="waves-effect waves-light btn-large pink lighten-3">Bored</a>
+            </div>
+            <!-- VARIOUS CHATBOXES FOR EACH EMOTION -->
+            <!-- EMOTION: SAD -->
+            <div class="chatBox pink lighten-3 center-align floating">
+                <p class="chatBoxOne" id="sad">
+                    I am so sorry you are feeling that way. Maybe this will cheer you up.
+                </p>
+            </div>
+            <!-- EMOTION: HAPPY -->
+            <div class="chatBox pink lighten-3 center-align floating">
+                <p class="chatBoxOne" id="happy">
+                    Oh you're happy, I am too! Let us look as some happy things!
+                </p>
+            </div>
+            <!-- EMOTION: BORED -->
+            <div class="chatBox pink lighten-3 center-align floating">
+                <p class="chatBoxOne" id="bored">
+                    When I am bored, I do not know what to do. Maybe this will help you decide.
+                </p>
+            </div>
+            <!-- CONTAINER TO HOLD CONTENT CARDS -->
+            <div class="container">
+
+            </div>
+            <!-- CONTAINER TO HOLD POSIBOT -->
+            <div class="posiBotContainer">
+
             </div>
         </div>
     </div>
