@@ -17,6 +17,7 @@ nav {
 .container {
     height: 900px;
     width: auto;
+    overflow: auto;
     /* background-image: linear-gradient(90deg, #6D0FF2, #AB05F2); */
 }
 
@@ -29,11 +30,13 @@ nav {
 
 .content {
     width: 500px;
-    height: 250px;
+    height: 50vh;
     top: 60%;
     left: 35%;
     /* padding: 40px; */
-    position: fixed;
+    position: absolute;
+    overflow: auto;
+
 }
 
 .chatBox {
