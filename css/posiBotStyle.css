@@ -5,6 +5,12 @@
     
 }
 
+body {
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
 nav {
     position: fixed;
 }
@@ -14,10 +20,15 @@ nav {
     /* position: fixed; */
 }
 
+.main {
+    margin-bottom: 980px;
+}
 .container {
     height: 900px;
     width: auto;
     overflow: auto;
+    flex: 1 0 auto;
+
     /* background-image: linear-gradient(90deg, #6D0FF2, #AB05F2); */
 }
 
@@ -148,6 +159,7 @@ img {
 
 #contentContainer {
     height: 900px;
+    margin-top: 100px;
 
 }
 
@@ -155,6 +167,35 @@ img {
     position: fixed;
     top: 340px;
     left: 660px;
+}
+
+.page-footer {
+    height: 120px;;
+    overflow: hidden;
+    position: sticky;
+    margin-bottom: 0px;
+    background-color: #ec407a;
+
+}
+
+h4 {
+    margin-top: 0px;
+}
+
+#footerRow {
+    margin-bottom: 0px!important;
+}
+
+#creatorsTitle {
+    text-align: center;
+}
+
+#leftCreators {
+    float: left;
+}
+
+#rightCreators {
+    float: right;
 }
 /* .input-field {
     margin: 0 auto;
