@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     })
 
-    // FIRST NAME ENTER EVENT LISTENER --------------------------------------------------------
+    // FIRST NAME ENTER KEYUP EVENT LISTENER --------------------------------------------------------
     $("#first_name2").on("keyup", function(event){
         if(event.keyCode == 13){
             $("#firstNameInput").hide();
@@ -18,12 +18,17 @@ $(document).ready(function () {
             console.log(firstName);
             $("#firstNameFiller").text(firstName);
             $("#thirdChatBox").css("visibility", "visible");
+            $(".emoBtns").css("visibility", "visible");
+
         }
     });
 
     // HAPPY BUTTON EVENT LISTENER -------------------------------------------------------------
     $("#happyBtn").on("click", function () {
-
+        $("#thirdChatBox").css("visibility", "hidden");
+        $("#happyChatBox").css("visibility", "visible");
+        $("#boredChatBox").css("visibility", "hidden");
+        $("#sadChatBox").css("visibility", "hidden");
         $("#contentContainer").empty();
 
         // Randomizes the GIFs called 
@@ -66,9 +71,13 @@ $(document).ready(function () {
 
     // SAD BUTTON EVENT LISTENER -------------------------------------------------------------
     $("#sadBtn").on("click", function () {
+        $("#thirdChatBox").css("visibility", "hidden");
+        $("#sadChatBox").css("visibility", "visible");
+        $("#happyChatBox").css("visibility", "hidden");
+        $("#boredChatBox").css("visibility", "hidden");
         $("#contentContainer").empty();
 
-            // Randomizes the motivational poster pulled.
+            // Randomizes the motivational poster pulled
             var quoteTerms = ["Happiness", "Positive", "Kindness", "Motivational", "Positivity", "Healing", "Peace"];
             var rotate = Math.floor(quoteTerms.length * Math.random());
             var searchTerm = quoteTerms[rotate];
@@ -103,9 +112,13 @@ $(document).ready(function () {
 
     // BORED BUTTON EVENT LISTENER -------------------------------------------------------------
     $("#boredBtn").on("click", function () {
-        // Call movie API-------------------------------------------------------------------------------
+        $("#thirdChatBox").css("visibility", "hidden");
+        $("#happyChatBox").css("visibility", "hidden");
+        $("#sadChatBox").css("visibility", "hidden");
+        $("#boredChatBox").css("visibility", "visible");
         $("#contentContainer").empty();
 
+            // Call movie API
             var settings = {
                 "async": true,
                 "crossDomain": true,

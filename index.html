@@ -4,7 +4,8 @@
 <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
+    <!--Import fontawesome icons-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -15,51 +16,26 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<!-- <style>
-    .nav-wrapper {
-        background-color: #ec407a
-    } 
-    container {
-        background-color: white
-    }
-    
-    body {
-        background-color: #f3e5f5
-    }
--->
-</style>
 
 <body>
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">Logo</a>
+            <a href="#" class="brand-logo center">PosiBot</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="sass.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="badges.html">About</a></li>
 
             </ul>
         </div>
     </nav>
-    <!-- PAGE CONTAINER -->
-    <div class="container">
-        <!-- CONTAINER TO HOLD POSIBOT -->
+    <div class="main">
+        <!-- PAGE CONTAINER -->
+        <div class="container">
+            <!-- CONTAINER TO HOLD POSIBOT -->
 
-        <div class="posiBotContainer floating">
-            <img src="assets/Posi-Bot test run.png" alt="posiBot">
-        </div>
-
-        <!-- CHATBOX AND CONTENT CONTAINER -->
-        <div class="content">
-            <!-- CHATBOX INTRO-->
-            <div class="chatBox pink lighten-3 center-align floating" id="firstChatBox">
-                <p class="chatBoxParagraph">
-                    Hello, I'm PosiBot. I'm a positivity chatbot to help you when you're feeling down.
-                </p>
-            </div>
-            <!-- BUTTON TO CLICK TO NEXT BOX -->
-            <div class="center-align col s6" id="firstClick">
-                <a class="waves-effect waves-light btn-large pink lighten-3">Hi, PosiBot!</a>
+            <div class="posiBotContainer floating">
+                <img src="assets/images/Posi-Bot test run.png" alt="posiBot">
             </div>
 
             <!-- NEXT CHATBOX -->
@@ -74,49 +50,110 @@
                 <div class="input-field col s3 offset-s4" id="firstNameInput">
                     <input id="first_name2" type="text" class="validate">
                     <label class="active" for="first_name2">First Name</label>
+
+            <!-- CHATBOX AND CONTENT CONTAINER -->
+            <div class="content">
+                <!-- CHATBOX INTRO-->
+                <div class="chatBox pink lighten-3 center-align floating" id="firstChatBox">
+                    <p class="chatBoxParagraph">
+                        Hello, I'm PosiBot! I'm a positivity chatbot to help you when you're feeling down.
+                    </p>
                 </div>
+                <!-- BUTTON TO CLICK TO NEXT BOX -->
+                <div class="center-align col s6" id="firstClick">
+                    <a class="waves-effect waves-light btn-large pink lighten-3">Hi, PosiBot!</a>
+                </div>
+
+                <!-- NEXT CHATBOX -->
+                <div class="chatBox pink lighten-3 center-align floating" id="secondChatBox">
+                    <p class="chatBoxParagraph">
+                        What is your name?
+                    </p>
+                </div>
+                <!-- INPUT FOR USER NAME -->
+                <div>
+                    <!-- class="row" -->
+                    <div class="input-field col s3 offset-s4" id="firstNameInput">
+                        <input id="first_name2" type="text" class="validate">
+                        <label class="active" for="first_name2">First Name</label>
+                    </div>
+                </div>
+                <!-- FEELING CHATBOX -->
+                <div class="chatBox pink lighten-3 center-align floating" id="thirdChatBox">
+                    <p class="chatBoxParagraph">
+                        Hi <span id="firstNameFiller"></span>, it's so nice to meet you. How are you feeling today?
+                    </p>
+                </div>
+                <!-- USER RESPONSE FEELINGS -->
+                <div class="emoBtns center-align ">
+                    <a id="happyBtn" class="waves-effect waves-light btn-large pink lighten-3">Happy</a>
+                    <a id="sadBtn" class="waves-effect waves-light btn-large pink lighten-3">Sad</a>
+                    <a id="boredBtn" class="waves-effect waves-light btn-large pink lighten-3">Bored</a>
+                </div>
+                <!-- VARIOUS CHATBOXES FOR EACH EMOTION -->
+                <!-- EMOTION: SAD -->
+                <div class="chatBox pink lighten-3 center-align floating" id="sadChatBox">
+                    <p class="chatBoxParagraph">
+                        I am so sorry you are feeling that way. Maybe this will cheer you up.
+                    </p>
+                </div>
+                <!-- EMOTION: HAPPY -->
+                <div class="chatBox pink lighten-3 center-align floating" id="happyChatBox">
+                    <p class="chatBoxParagraph">
+                        Oh you're happy, I am too! Let us look as some happy things!
+                    </p>
+                </div>
+                <!-- EMOTION: BORED -->
+                <div class="chatBox pink lighten-3 center-align floating" id="boredChatBox">
+                    <p class="chatBoxParagraph">
+                        When I am bored, I do not know what to do. Maybe this will help you decide.
+                    </p>
+
+                </div>
+
             </div>
-            <!-- FEELING CHATBOX -->
-            <div class="chatBox pink lighten-3 center-align floating" id="thirdChatBox">
-                <p class="chatBoxParagraph">
-                    Hi <span id="firstNameFiller"></span>, it's so nice to meet you. How are you feeling today?
-                </p>
-            </div>
-            <!-- USER RESPONSE FEELINGS -->
-            <div class="emoBtns center-align ">
-                <a id="happyBtn" class="waves-effect waves-light btn-large pink lighten-3">Happy</a>
-                <a id="sadBtn" class="waves-effect waves-light btn-large pink lighten-3">Sad</a>
-                <a id="boredBtn" class="waves-effect waves-light btn-large pink lighten-3">Bored</a>
-            </div>
-            <!-- VARIOUS CHATBOXES FOR EACH EMOTION -->
-            <!-- EMOTION: SAD -->
-            <div class="chatBox pink lighten-3 center-align floating" id="sadChatBox">
-                <p class="chatBoxParagraph">
-                    I am so sorry you are feeling that way. Maybe this will cheer you up.
-                </p>
-            </div>
-            <!-- EMOTION: HAPPY -->
-            <div class="chatBox pink lighten-3 center-align floating" id="happyChatBox">
-                <p class="chatBoxParagraph">
-                    Oh you're happy, I am too! Let us look as some happy things!
-                </p>
-            </div>
-            <!-- EMOTION: BORED -->
-            <div class="chatBox pink lighten-3 center-align floating" id="boredChatBox">
-                <p class="chatBoxParagraph">
-                    When I am bored, I do not know what to do. Maybe this will help you decide.
-                </p>
-            </div>
+        </div>
+
+        <!-- CONTAINER TO HOLD CONTENT CARDS -->
+        <div class="row" id="contentContainer">
 
         </div>
-    </div>
-    <!-- CONTAINER TO HOLD CONTENT CARDS -->
-    <div class="row" id="contentContainer">
-
-    </div>
-
-    <!-- CONTAINER FOR GOOGLE MAP -->
+ <!-- CONTAINER FOR GOOGLE MAP -->
     <div id="map" style="width: 700px; height: 600px"></div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row" id="footerRow">
+                <div class="col l6 s12">
+                    <h6 class="white-text">About</h6>
+                    <p class="grey-text text-lighten-4">Thanks for using PosiBot! We hope we brightened your
+                        day.</p>
+                    <p class="grey-text text-lighten-4">This program uses Javascript, jQuery/AJAX, and the
+                        Materialize framework.</p>
+
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h6 class="white-text" id="creatorsTitle">Creators</h6>
+                    <div class="row" id="leftCreators">
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Gelissa Leveille 
+                                <i class='fab fa-github'></i></a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Aaron Jackson  <i class='fab fa-github'></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="row" id="rightCreators">
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Isaac Cole Jones
+                                    <i class='fab fa-github'></i></a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Mallory Steffes
+                                    <i class='fab fa-github'></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 <!-- Google Maps API script -->
@@ -126,7 +163,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBalsCc3sNclUyPdty0itcxzXT
 <!--JavaScript at end of body for optimized loading-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="assets/Javascript/app.js"></script>;
+<script src="assets/Javascript/app.js"></script>
 
 </body>
 
