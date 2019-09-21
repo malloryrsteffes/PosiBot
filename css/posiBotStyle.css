@@ -108,8 +108,35 @@ img {
     position: relative;
 }
 
+#firstClick {
+    position: fixed;
+    left: 650px;
+}
+
+#happyBtn,
+#sadBtn,
+#boredBtn {
+    position: fixed;    
+    left: 640px
+}
+
+#happyBtn {
+    left: 480px;
+}
+
+#boredBtn {
+    left: 780px;
+}
+
 #contentContainer {
     height: 900px;
+
+}
+
+.input-field {
+    position: fixed;
+    top: 340px;
+    left: 660px;
 }
 /* .input-field {
     margin: 0 auto;
