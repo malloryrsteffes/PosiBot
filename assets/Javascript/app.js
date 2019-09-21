@@ -1,6 +1,26 @@
 $(document).ready(function () {
     M.AutoInit();
 
+    // HI, POSIBOT EVENT LISTENER --------------------------------------------------------------
+    $("#firstClick").on("click", function(){
+        $("#firstChatBox").hide();
+        $(this).hide();
+        $("#secondChatBox").css("visibility", "visible");
+        $("#firstNameInput").css("visibility", "visible");
+
+    })
+
+    // FIRST NAME ENTER EVENT LISTENER --------------------------------------------------------
+    $("#first_name2").on("keyup", function(event){
+        if(event.keyCode == 13){
+            $("#firstNameInput").hide();
+            var firstName = $("#first_name2").val().trim();
+            console.log(firstName);
+            $("#firstNameFiller").text(firstName);
+            $("#thirdChatBox").css("visibility", "visible");
+        }
+    });
+
     // HAPPY BUTTON EVENT LISTENER -------------------------------------------------------------
     $("#happyBtn").on("click", function () {
 

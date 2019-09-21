@@ -52,34 +52,34 @@
         <!-- CHATBOX AND CONTENT CONTAINER -->
         <div class="content">
             <!-- CHATBOX INTRO-->
-            <div class="chatBox pink lighten-3 center-align floating">
-                <p class="chatBoxOne">
+            <div class="chatBox pink lighten-3 center-align floating" id="firstChatBox">
+                <p class="chatBoxParagraph">
                     Hello, I'm PosiBot. I'm a positivity chatbot to help you when you're feeling down.
                 </p>
             </div>
             <!-- BUTTON TO CLICK TO NEXT BOX -->
-            <div class="emoBtns center-align col s6" id="firstClick">
-                <a class="waves-effect waves-light btn-large pink lighten-3">Hi PosiBot</a>
+            <div class="center-align col s6" id="firstClick">
+                <a class="waves-effect waves-light btn-large pink lighten-3">Hi, PosiBot!</a>
             </div>
 
             <!-- NEXT CHATBOX -->
-            <div class="chatBox pink lighten-3 center-align floating">
-                <p class="chatBoxOne">
+            <div class="chatBox pink lighten-3 center-align floating" id="secondChatBox">
+                <p class="chatBoxParagraph">
                     What is your name?
                 </p>
             </div>
             <!-- INPUT FOR USER NAME -->
             <div>
             <!-- class="row" -->
-                <div class="input-field col s3 offset-s4">
-                    <input value="Name" id="first_name2" type="text" class="validate">
+                <div class="input-field col s3 offset-s4" id="firstNameInput">
+                    <input id="first_name2" type="text" class="validate">
                     <label class="active" for="first_name2">First Name</label>
                 </div>
             </div>
             <!-- FEELING CHATBOX -->
-            <div class="chatBox pink lighten-3 center-align floating">
-                <p class="chatBoxOne">
-                    Hi <span id="first_name2"></span>, it's so nice to meet you. How are you feeling today?
+            <div class="chatBox pink lighten-3 center-align floating" id="thirdChatBox">
+                <p class="chatBoxParagraph">
+                    Hi <span id="firstNameFiller"></span>, it's so nice to meet you. How are you feeling today?
                 </p>
             </div>
             <!-- USER RESPONSE FEELINGS -->
@@ -90,20 +90,20 @@
             </div>
             <!-- VARIOUS CHATBOXES FOR EACH EMOTION -->
             <!-- EMOTION: SAD -->
-            <div class="chatBox pink lighten-3 center-align floating">
-                <p class="chatBoxOne" id="sadChatBox">
+            <div class="chatBox pink lighten-3 center-align floating" id="sadChatBox">
+                <p class="chatBoxParagraph">
                     I am so sorry you are feeling that way. Maybe this will cheer you up.
                 </p>
             </div>
             <!-- EMOTION: HAPPY -->
-            <div class="chatBox pink lighten-3 center-align floating">
-                <p class="chatBoxOne" id="happyChatBox">
+            <div class="chatBox pink lighten-3 center-align floating" id="happyChatBox">
+                <p class="chatBoxParagraph">
                     Oh you're happy, I am too! Let us look as some happy things!
                 </p>
             </div>
             <!-- EMOTION: BORED -->
-            <div class="chatBox pink lighten-3 center-align floating">
-                <p class="chatBoxOne" id="boredChatBox">
+            <div class="chatBox pink lighten-3 center-align floating" id="boredChatBox">
+                <p class="chatBoxParagraph">
                     When I am bored, I do not know what to do. Maybe this will help you decide.
                 </p>
             </div>
