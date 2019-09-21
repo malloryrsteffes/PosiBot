@@ -70,7 +70,7 @@
             </div>
             <!-- INPUT FOR USER NAME -->
             <div>
-            <!-- class="row" -->
+                <!-- class="row" -->
                 <div class="input-field col s3 offset-s4" id="firstNameInput">
                     <input id="first_name2" type="text" class="validate">
                     <label class="active" for="first_name2">First Name</label>
@@ -110,11 +110,19 @@
 
         </div>
     </div>
-        <!-- CONTAINER TO HOLD CONTENT CARDS -->
-        <div class="row" id="contentContainer">
+    <!-- CONTAINER TO HOLD CONTENT CARDS -->
+    <div class="row" id="contentContainer">
 
-        </div>
+    </div>
+
+    <!-- CONTAINER FOR GOOGLE MAP -->
+    <div id="map" style="width: 700px; height: 600px"></div>
 </body>
+
+<!-- Google Maps API script -->
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBalsCc3sNclUyPdty0itcxzXTBs9pypoo&libraries=places&callback=initMap"></script>
+
 <!--JavaScript at end of body for optimized loading-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
