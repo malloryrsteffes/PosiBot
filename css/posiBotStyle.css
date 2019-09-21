@@ -34,13 +34,6 @@ img {
     left: 220px;
 }
 
-/* .page-content {
-    width: 960px;
-    height: 900px;
-    top: 50%;
-    left: 50%;
-} */
-
 .content {
     width: 500px;
     height: 50vh;
@@ -63,6 +56,26 @@ img {
     position: fixed;
     top: 30%;
     left: 40%;
+}
+
+#secondChatBox {
+    visibility: hidden;
+}
+
+#thirdChatBox {
+    visibility: hidden;
+}
+
+#happyChatBox {
+    visibility: hidden;
+}
+
+#boredChatBox {
+    visibility: hidden;
+}
+
+#sadChatBox {
+    visibility: hidden;
 }
 
 .floating {  
@@ -90,7 +103,7 @@ img {
     transition: background-color 0.25s;
 }
 
-.chatBoxOne {
+.chatBoxParagraph {
     font-family: Arial, Helvetica, sans-serif;
     /* font-size: 24px; */
 }
@@ -105,12 +118,17 @@ img {
 }
 
 .emoBtns {
+    visibility: hidden;
     position: relative;
 }
 
 #firstClick {
     position: fixed;
     left: 650px;
+}
+
+#firstNameInput {
+    visibility: hidden;
 }
 
 #happyBtn,
