@@ -20,9 +20,12 @@ nav {
     /* position: fixed; */
 }
 
+
 .main {
     margin-bottom: 980px;
 }
+
+
 .container {
     height: 900px;
     width: auto;
@@ -121,6 +124,8 @@ img {
 
 .btn-large {
     padding: 0 48px;
+    border: 1px transparent;
+    border-radius: 20px 20px;
 }
 
 #chatBoxOne {
