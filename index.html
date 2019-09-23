@@ -34,25 +34,25 @@
         <div class="container">
             <!-- CONTAINER TO HOLD POSIBOT -->
 
-            <div class="posiBotContainer floating">
-                <img src="assets/images/Posi-Bot test run.png" alt="posiBot">
-            </div>
+            <!-- <div class="posiBotContainer floating"> -->
+                <img src="assets/images/Posi-Bot test run.png" alt="posiBot" class="floating">
+            <!-- </div> -->
 
             <!-- CHATBOX AND CONTENT CONTAINER -->
-            <div class="content">
+            <!-- <div class="content"> -->
                 <!-- CHATBOX INTRO-->
-                <div class="chatBox pink lighten-3 center-align floating" id="firstChatBox">
+                <div class="chatBox center-align floating" id="firstChatBox">
                     <p class="chatBoxParagraph">
                         Hello, I'm PosiBot! I'm a positivity chatbot to help you when you're feeling down.
                     </p>
                 </div>
                 <!-- BUTTON TO CLICK TO NEXT BOX -->
                 <div class="center-align col s6" id="firstClick">
-                    <a class="waves-effect waves-light btn-large pink lighten-3">Hi, PosiBot!</a>
+                    <a class="waves-effect waves-light btn-large">Hi, PosiBot!</a>
                 </div>
 
                 <!-- NEXT CHATBOX -->
-                <div class="chatBox pink lighten-3 center-align floating" id="secondChatBox">
+                <div class="chatBox center-align floating" id="secondChatBox">
                     <p class="chatBoxParagraph">
                         What is your name?
                     </p>
@@ -66,43 +66,45 @@
                     </div>
                 </div>
                 <!-- FEELING CHATBOX -->
-                <div class="chatBox pink lighten-3 center-align floating" id="thirdChatBox">
+                <div class="chatBox center-align floating" id="thirdChatBox">
                     <p class="chatBoxParagraph">
                         Hi <span id="firstNameFiller"></span>, it's so nice to meet you. How are you feeling today?
                     </p>
                 </div>
                 <!-- USER RESPONSE FEELINGS -->
                 <div class="emoBtns center-align ">
-                    <a id="happyBtn" class="waves-effect waves-light btn-large pink lighten-3">Happy</a>
-                    <a id="sadBtn" class="waves-effect waves-light btn-large pink lighten-3">Sad</a>
-                    <a id="boredBtn" class="waves-effect waves-light btn-large pink lighten-3">Bored</a>
+                    <a id="happyBtn" class="waves-effect waves-light btn-large" href="#contentContainer">Happy</a>
+                    <a id="sadBtn" class="waves-effect waves-light btn-large">Sad</a>
+                    <a id="boredBtn" class="waves-effect waves-light btn-large" href="#contentContainer">Bored</a>
                 </div>
                 <!-- VARIOUS CHATBOXES FOR EACH EMOTION -->
                 <!-- EMOTION: SAD -->
-                <div class="chatBox pink lighten-3 center-align floating" id="sadChatBox">
+                <div class="chatBox center-align floating" id="sadChatBox">
                     <p class="chatBoxParagraph">
                         I am so sorry you are feeling that way. Maybe this will cheer you up.
                     </p>
                 </div>
                 <!-- EMOTION: HAPPY -->
-                <div class="chatBox pink lighten-3 center-align floating" id="happyChatBox">
+                <div class="chatBox center-align floating" id="happyChatBox">
                     <p class="chatBoxParagraph">
                         Oh you're happy, I am too! Let us look as some happy things!
                     </p>
                 </div>
                 <!-- EMOTION: BORED -->
-                <div class="chatBox pink lighten-3 center-align floating" id="boredChatBox">
+                <div class="chatBox center-align floating" id="boredChatBox">
                     <p class="chatBoxParagraph">
                         When I am bored, I do not know what to do. Maybe this will help you decide.
                     </p>
                 </div>
 
             </div>
-        </div>
-        <!-- CONTAINER TO HOLD CONTENT CARDS -->
-        <div class="row" id="contentContainer">
+        <!-- </div> -->
+        
+      
 
-        </div>
+    </div>  
+    <!-- CONTAINER TO HOLD CONTENT CARDS -->
+    <div class="row" id="contentContainer">
 
     </div>
     <footer class="page-footer">
@@ -120,7 +122,7 @@
                     <h6 class="white-text" id="creatorsTitle">Creators</h6>
                     <div class="row" id="leftCreators">
                         <ul>
-                            <li><a class="grey-text text-lighten-3" href="#!">Gelissa Leveille 
+                            <li><a class="grey-text text-lighten-3" href="https://github.com/gelissa">Gelissa Leveille 
                                 <i class='fab fa-github'></i></a></li>
                             <li><a class="grey-text text-lighten-3" href="#!">Aaron Jackson  <i class='fab fa-github'></i></a></li>
                         </ul>
@@ -142,6 +144,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="assets/Javascript/app.js"></script>
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, options);
+  });
+</script>
 
 </body>
 

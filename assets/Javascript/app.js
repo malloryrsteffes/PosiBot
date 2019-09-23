@@ -101,7 +101,7 @@ $(document).ready(function () {
 
                 // Appends quote to the page
                 var inspoURL = response[0].media;
-                var inspoImage = $("<img>")
+                var inspoImage = $("<img class='inspoImg'>")
                 inspoImage.attr("src", inspoURL)
 
                 $("#contentContainer").append(inspoImage);
