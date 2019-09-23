@@ -22,9 +22,14 @@
 > The user will be given three choices of response (happy, sad, or bored) in the form of buttons. 
 > Depending on their mood choice, PosiBot will provide them with an appropriate response.
 
+## Built with:
+> HTML/CSS
+> The [Materialize Framework]("https://materializecss.com/")
+> Javascript/jQuery
+
 ## API Information
 
->*Movie Calling API:* We utilized the Unofficial Netflix Online Global Search (or uNoGS) to provide the users who respond as "bored" with movies currently available on Netflix. The Query URL:
+>**Movie Calling API:** We utilized the Unofficial Netflix Online Global Search (or uNoGS) to provide the users who respond as "bored" with movies currently available on Netflix. The Query URL:
 
 ```Javascript
 "url": "https://unogs-unogs-v1.p.rapidapi.com/aaapi.cgi?q=get&p=1&t=drama&st=adv",
@@ -32,7 +37,7 @@
 
 > Optional Parameters include p (page)and t (genre)
 
-> *Motivational Quote API:* We utilized the Universal Inspirational Quotes API Documentation to return a random uplifting quote to users who are feeling sad. The Query URL:
+> **Motivational Quote API:** We utilized the Universal Inspirational Quotes API Documentation to return a random uplifting quote to users who are feeling sad. The Query URL:
 
 ```Javascript
 var queryURL = "https://healthruwords.p.rapidapi.com/v1/quotes/?id=&t=" + searchTerm + "&maxR=1&size=large&x-rapidapi-key=?";
@@ -45,7 +50,7 @@ var queryURL = "https://healthruwords.p.rapidapi.com/v1/quotes/?id=&t=" + search
     var quoteTerms = ["Happiness", "Positive", "Kindness", "Motivational", "Positivity", "Healing", "Peace"];
 ```
 
-> *GIPHY API:* We utilized the GIPHY API to return some funny GIFs for users who say they are in a happy mood. The Query URL:
+> **GIPHY API:** We utilized the GIPHY API to return some funny GIFs for users who say they are in a happy mood. The Query URL:
 
 ```Javascript
 "https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=?&limit=6%rating=g";
@@ -58,7 +63,7 @@ var queryURL = "https://healthruwords.p.rapidapi.com/v1/quotes/?id=&t=" + search
         var gifArray = ["funny", "silly", "hilarious", "memes", "fun", "cute", "adorable"]
 ```
 
->*Google Maps API* : We utilized the Google Maps API to provide bored users with nearby restaurants they can snack at. The Query URL:
+>**Google Maps API** : We utilized the Google Maps API to provide bored users with nearby restaurants they can snack at. The Query URL:
 
 
 >Optional Parameters include:
@@ -84,8 +89,8 @@ var queryURL = "https://healthruwords.p.rapidapi.com/v1/quotes/?id=&t=" + search
 > We are also less than thrilled with the quality of the Universal Quotes API, and are hoping to find a better alternative.
 
 ## Authors and Acknowledgment 
-> Page Design: Gelissa Leveille
-> API and Javascript: Aaron Jackson and Mallory Steffes
+> UI Design: Gelissa Leveille
+> API Calls and Javascript: Aaron Jackson and Mallory Steffes
 > PosiBot Character Design: Isaac Cole Jones
 
 > Many thanks to the fantastic instructors at the UCF Boot Camp.
