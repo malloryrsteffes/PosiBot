@@ -4,7 +4,7 @@ font-family: 'Pacifico', cursive;
 }
 
 #nav-mobile {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Pacifico', cursive;
 }
 
 .nav-wrapper {
@@ -115,7 +115,7 @@ h1 span:nth-child(4){
 } */
 
 .sectionExample {
-    background-color: #828dab;
+    background-color: white;
     color: #f6914e;
     display: flex;
     flex-flow: nowrap;
@@ -137,25 +137,30 @@ img {
 
 }
 
-.happy {
-    height: 50vh;
-    padding: 30px 0 0 0;
-}
+.emotions {
+    padding: 20px;
+    height: 300px;
 
-.sad {
-    height: 50vh;
-    padding: 30px 0 0 0;
-}
-
-.bored {
-    height: 50vh;
-    padding: 30px 0 0 0;
 
 }
+
+#happy {
+    background: #828dab;
+    text-shadow: 1px 1px grey;
+
+}
+
+#bored {
+    background: #828dab;
+    text-shadow: 1px 1px grey;
+
+}
+
 
 .trial {
     height: 50vh;
     padding: 40px 0 0 0;
+
 
 }
 
