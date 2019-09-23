@@ -168,6 +168,8 @@ $(document).ready(function () {
 
                     $("#contentContainer").append(newDiv);
                 }
+                var netflixPointer = $("<h6 class='center'> Bored? Me too. I've been watching these new Netflix releases lately - head <a href='https://www.netflix.com'>here</a> to watch any of them! </h6>")
+                $("#contentContainer").prepend(netflixPointer);
 
 
 
