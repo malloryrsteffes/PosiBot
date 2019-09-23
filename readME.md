@@ -15,9 +15,12 @@
 > Sad users will see a motivational quote.
 > Bored users will see Netflix movie suggestions and nearby restaurants.
 
-## Layout
+## Layout and Concept
 
-> 
+> PosiBot's site is laid out quite simply. The user has very little to do other than the streamlined conversation with PosiBot.
+> Initially, Posibot will ask the user their name, then how they are feeling.
+> The user will be given three choices of response (happy, sad, or bored) in the form of buttons. 
+> Depending on their mood choice, PosiBot will provide them with an appropriate response.
 
 ## API Information
 
