@@ -16,6 +16,9 @@ body {
 
 nav {
     position: fixed;
+    font-family: 'Pacifico', cursive;
+    font-size: 96px;
+
 }
 
 .nav-wrapper {
@@ -222,7 +225,7 @@ img {
     overflow: hidden;
     position: sticky;
     margin-bottom: 0px;
-    background-color: #ec407a;
+    background-color: #828dab;
 
 }
 
